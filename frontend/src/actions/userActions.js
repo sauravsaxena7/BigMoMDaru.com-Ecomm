@@ -55,7 +55,7 @@ import {
 
 
         const { data } = await axios.post(
-            `http://localhost:4000/api/v1/login`,
+            `/api/v1/login`,
             {email,password},
             config
      
@@ -94,7 +94,7 @@ import {
 
 
         const { data } = await axios.post(
-            `http://localhost:4000/api/v1/register`,
+            `/api/v1/register`,
             userData,
             config
      
@@ -138,7 +138,7 @@ import {
         
 
 
-        const { data } = await axios.get(`http://localhost:4000/api/v1/me`,{ 
+        const { data } = await axios.get(`/api/v1/me`,{ 
             headers: {
                 "Authorization" : `${token}`,
                 'Content-Type': 'application/json'
@@ -180,7 +180,7 @@ import {
         
 
 
-        await axios.get(`http://localhost:4000/api/v1/logout`);
+        await axios.get(`/api/v1/logout`);
 
         
 
@@ -224,7 +224,7 @@ import {
 
 
         const { data } = await axios.put(
-            `http://localhost:4000/api/v1/me/update`,
+            `/api/v1/me/update`,
             userData,
             config
      
@@ -267,7 +267,7 @@ import {
 
 
         const { data } = await axios.put(
-            `http://localhost:4000/api/v1/password/update`,
+            `/api/v1/password/update`,
             password,
             config
      
@@ -306,7 +306,7 @@ import {
 
 
         const { data } = await axios.post(
-            `http://localhost:4000/api/v1/password/forgot`,
+            `/api/v1/password/forgot`,
             email,
             config
      
@@ -345,7 +345,7 @@ import {
 
 
         const { data } = await axios.put(
-            `http://localhost:4000/api/v1/password/reset/${token}`,
+            `/api/v1/password/reset/${token}`,
             passwords,
             config
      
@@ -392,7 +392,7 @@ import {
 
         };
 
-        const {data} = await axios.get(`http://localhost:4000/api/v1/admin/users`,config);
+        const {data} = await axios.get(`/api/v1/admin/users`,config);
 
 
 
@@ -436,7 +436,7 @@ import {
 
 
         const { data } = await axios.put(
-            `http://localhost:4000/api/v1/admin/user/${id}`,
+            `/api/v1/admin/user/${id}`,
             userData,
             config
      
@@ -481,7 +481,7 @@ import {
 
 
         const { data } = await axios.delete(
-            `http://localhost:4000/api/v1/admin/user/${id}`,
+            `/api/v1/admin/user/${id}`,
             config
      
             );
@@ -518,7 +518,7 @@ import {
         
 
 
-        const { data } = await axios.get(`http://localhost:4000/api/v1/admin/user/${id}`,{ 
+        const { data } = await axios.get(`/api/v1/admin/user/${id}`,{ 
             headers: {
                 "Authorization" : `${token}`,
                 'Content-Type': 'application/json'

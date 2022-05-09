@@ -36,7 +36,7 @@ export const createOrder = (order) => async(dispatch,getState) =>{
 
        
 
-        const { data } = await axios.post("http://localhost:4000/api/v1/order/new",order,config);
+        const { data } = await axios.post("/api/v1/order/new",order,config);
 
         dispatch({type:CREATE_ORDER_SUCCESS,payload:data});
 
@@ -71,7 +71,7 @@ export const myOrders = () => async(dispatch,getState) =>{
     
 
        
-        const { data } = await axios.get("http://localhost:4000/api/v1/orders/me",config);
+        const { data } = await axios.get("/api/v1/orders/me",config);
 
         dispatch({type:MYORDER_ORDER_SUCCESS,payload:data.order});
 
@@ -98,7 +98,7 @@ export const getOrderDetails = (id) => async (dispatch) => {
       dispatch({ type: ORDER_DETAILS_REQUEST });
 
     
-      const { data } = await axios.get(`http://localhost:4000/api/v1/order/${id}`,config);
+      const { data } = await axios.get(`/api/v1/order/${id}`,config);
       console.log("sauiiii",data.order);
 
   
@@ -128,7 +128,7 @@ export const getAllOrders = () => async(dispatch,getState) =>{
     
 
        
-        const { data } = await axios.get("http://localhost:4000/api/v1/admin/orders",config);
+        const { data } = await axios.get("/api/v1/admin/orders",config);
 
         dispatch({type:ALL_ORDER_SUCCESS,payload:data.orders});
 
@@ -164,7 +164,7 @@ export const updateOrder = (id,order) => async(dispatch,getState) =>{
 
        
 
-        const { data } = await axios.put(`http://localhost:4000/api/v1/admin/order/${id}`,order,config);
+        const { data } = await axios.put(`/api/v1/admin/order/${id}`,order,config);
 
         dispatch({type:UPDATE_ORDER_SUCCESS,payload:data.success});
 
@@ -197,7 +197,7 @@ export const deleteOrder = (id) => async(dispatch,getState) =>{
 
        
 
-        const { data } = await axios.delete(`http://localhost:4000/api/v1/admin/order/${id}`,config);
+        const { data } = await axios.delete(`/api/v1/admin/order/${id}`,config);
 
         dispatch({type:DELETE_ORDER_SUCCESS,payload:data.success});
 

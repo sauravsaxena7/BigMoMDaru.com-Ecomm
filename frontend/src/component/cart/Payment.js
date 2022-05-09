@@ -89,7 +89,7 @@ const Payment = () =>{
 
         const {data} = await axios.post(
 
-          "http://localhost:4000/api/v1/payment/process",
+          "/api/v1/payment/process",
           paymentData,
           config
 
