@@ -218,6 +218,10 @@
       flex-direction: column;
       height: unset;
     }
+
+    .rBox{
+      width: 60vmax !important;
+    }
   
     .ProductDetails > div:last-child {
       align-items: center;
