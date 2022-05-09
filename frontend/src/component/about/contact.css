@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+
+.contact{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    flex: 1;
+}
+
+.left-wrapper{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.title > p{
+    font-size: 25px;
+    color: rgb(79, 77, 77);
+}
+
+.p-color{
+    font-size: 20px;
+    color: green;
+}
+.call-me{
+    margin-top: 30px;
+}
+.call-me > p{
+    font-size: 20px;
+}
+
+.icons-wrapper{
+    font-size: 25px;
+    margin-top: 30px;
+}
+.insta{
+    color: tomato;
+    margin: 10px;
+}
+
+.face{
+    color: rgb(23, 45, 208);
+    margin: 10px;
+
+}
+.git{
+    color:black;
+    margin: 10px;
+}
+
+.link{
+    color: rgb(4, 5, 73);
+    margin: 10px;
+}
+
+.get{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.getspan{
+    color:tomato !important; 
+}
+
+.con{
+    color: green;
+}
+
+@media screen and (max-width: 599px){
+
+    .contact{
+       
+
+
+        flex-direction: column;
+    }
+
+    .right{
+        margin-top: 10px !important;
+        margin-bottom: 20px;
+    }
+
+    .icons-wrapper{
+
+        font-size: 30px !important;
+        
+    }
+
+    .cpr{
+        height: 50vh;
+        width: 40vh;
+    }
+
+    
+
+    
+
+
+}
+
+@media screen and (max-width: 700px){
+
+    .contact{
+        
+        height: 60vh !important;
+        margin-top: -15px!important;
+    }
+
+    .get{
+        margin-top: -10px;
+        font-size: 10px !important;
+    }
+
+    .title > p{
+        font-size: 10px !important;
+    }
+
+    .icons-wrapper{
+        margin-top: -5px;
+        font-size: 10px !important;
+    }
+    .call-me{
+        margin-top: 15px;
+    }
+
+    .call-me > p{
+        font-size: 10px !important;
+    }
+
+    .p-color{
+        font-size: 10px !important;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 780px){
+
+    .get{
+        font-size: 15px;
+    }
+
+    .title > p{
+        font-size: 20px;
+    }
+
+    .icons-wrapper{
+        font-size: 20px;
+    }
+
+    .call-me > p{
+        font-size: 20px;
+    }
+
+    .p-color{
+        font-size: 20px;
+    }
+
+
+
+}
