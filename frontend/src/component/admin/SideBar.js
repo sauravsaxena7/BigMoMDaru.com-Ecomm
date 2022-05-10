@@ -56,10 +56,7 @@ const SideBar =()=>{
                 <p><RateReviewIcon />Reviews</p>
             </Link>
 
-            <Link to="/admin/about/update">
-                <p><PeopleIcon />AdminUpdate</p>
-            </Link>
-
+           
            
 
        

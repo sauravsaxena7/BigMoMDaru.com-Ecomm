@@ -51,26 +51,36 @@ const Navbar = () => {
           }>
           <ul>
             <li >
-              <NavLink style={{ color: "tomato" }} to="/">Home</NavLink>
+              <NavLink style={{ color: "tomato" }} to="/" onClick={() => setShowMediaIcons(!showMediaIcons)}>Home</NavLink>
             </li>
             <li>
-              <NavLink style={{ color: "tomato" }} to="/products">Products</NavLink>
+              <NavLink style={{ color: "tomato" }} to="/products" onClick={() => setShowMediaIcons(!showMediaIcons)}>Products</NavLink>
             </li>
             <li>
-            <NavLink style={{ color: "tomato" }} to="/search">Search</NavLink>
+            <NavLink style={{ color: "tomato" }} to="/search" onClick={() => setShowMediaIcons(!showMediaIcons)}>Search</NavLink>
             </li>
            
 
             <li>
-            <NavLink style={{ color: "tomato" }} to="/about">AboutUs</NavLink>
+            <NavLink style={{ color: "tomato" }} to="/about" onClick={() => setShowMediaIcons(!showMediaIcons)}>AboutUs</NavLink>
 
             </li>
 
             <li className="noo">
               
-            {isAuthenticated ? (<div></div>):(<NavLink to="/login">Login</NavLink>)}
-             
+              {isAuthenticated ? (<div></div>):(<NavLink to="/login" onClick={() => setShowMediaIcons(!showMediaIcons)}>Login</NavLink>)}
+               
+              </li>
+
+
+            <li className="noo close" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            CloseMe
+
             </li>
+
+            
+
+           
 
 
           </ul>

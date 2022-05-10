@@ -1,7 +1,7 @@
 .speedDial{
     position: fixed;
     
-    right: 3vmax;
+    right: 1vmax;
     top: 1.5vmax;
   }
 
@@ -9,4 +9,12 @@
     width: 56px;
     height: 56px;
     border-radius: 100%;
+}
+
+@media (max-width: 998px) {
+
+  .speedDial{
+    margin-top: 80px !important;
+  }
+
 }

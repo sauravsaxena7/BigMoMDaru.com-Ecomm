@@ -18,6 +18,16 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 }
 
+
+// const dotenv = require("dotenv");
+
+
+//config
+
+// dotenv.config({path:"backend/config/config.env"});
+
+
+
 app.use(express.json());
 
 

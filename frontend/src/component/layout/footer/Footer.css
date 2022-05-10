@@ -7,28 +7,8 @@ footer {
     align-items: center;
   }
   
-  .leftFooter {
-    width: 20%;
-    display: flex;
+ 
   
-    flex-direction: column;
-    align-items: center;
-  }
-  .leftFooter > h4 {
-    font-family: "Roboto";
-    font-size: 1vmax;
-  }
-  .leftFooter > p {
-    text-align: center;
-    font-size: 1.2vmax;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  .leftFooter > img {
-    width: 10vmax;
-    margin: 1vmax;
-    cursor: pointer;
-  }
   
   .midFooter {
     width: 60%;
@@ -48,7 +28,7 @@ footer {
   }
   
   .rightFooter {
-    width: 20%;
+    width: 40%;
   
     display: flex;
     flex-direction: column;
@@ -70,4 +50,32 @@ footer {
   
   .rightFooter > a:hover {
     color: #eb4034;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    footer {
+      margin-top: 40vmax;
+    }
+
+  }
+
+
+  @media screen and (max-width: 411px) {
+
+    
+   
+    footer {
+      margin-top: 30vmax;
+      
+      background-color: rgb(34, 33, 33);
+      color: white;
+      flex-direction: column;
+      align-items: center;
+    }
+    .rx{
+      font-size: 0.6vmax;
+    }
+
+
   }

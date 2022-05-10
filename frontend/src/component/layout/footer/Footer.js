@@ -12,18 +12,11 @@ const Footer = () =>{
     return (
 
         <footer id="footer">
-            <div className="leftFooter">
-
-                <h4>DOWNLOAD OUR APP</h4>
-                <p>Download App For Android And Ios mobile phone</p>
-                <img src={playStore} alt="playstore"/>
-                <img src={appStore} alt="appstore"/>
-
-            </div>
+            
 
             <div className="midFooter">
 
-                <h1><LogoCom/></h1>
+                <h1 className="rx"><LogoCom/></h1>
 
                 
                 <p>High Quality Is Our First Priority</p>

@@ -207,18 +207,7 @@ const ProductDetails = () =>{
 
                 <div className="ProductDetails">
                                 <div>
-                                    {/* <Carousel>
-                                        {product.images &&
-                                          product.images.map((item,i) => (
-                                              <img 
-                                                 className="CarouselImage"
-                                                 key={item.url}
-                                                 src={item.url}
-                                                 alt={`${i} Slide`}  
-                                                 />
-                                          ))
-                                        }
-                                    </Carousel> */}
+                                    
                 
                                     <Box className="rBox" color="white">
                 

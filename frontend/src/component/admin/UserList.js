@@ -167,14 +167,21 @@ const UserList = () =>{
                 <div className="productListContainer">
                     <h1 id="productListHeading">ALL USERS</h1>
 
+
+                    <div className="myOrdersPage">
+
                     <DataGrid
                        rows={rows}
                        columns={columns}
                        pageSize={10}
                        disableSelectionOnClick
-                       className="productListTable"
+                       className="myOrdersTable"
                        autoHeight
                     />
+                    
+                    </div>
+
+                  
 
 
 

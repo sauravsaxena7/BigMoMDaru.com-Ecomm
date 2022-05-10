@@ -24,6 +24,8 @@
   
   .myOrdersTable {
     background-color: white;
+    width: 100%;
+    padding: 0;
   }
   
   .myOrdersTable div {
@@ -54,27 +56,60 @@
   .MuiDataGrid-iconSeparator {
     display: none !important;
   }
+
+  @media screen and (max-width: 950px) {
+
+    .myOrdersTable div {
+      font: 300 2vmax "Roboto";
+    }
+  }
   
+  @media screen and (max-width: 600px) {
+    .myOrdersPage {
+     
+      padding: 0;
+      height: 93vh;
+    }
+
+   
+    
+  
+    #myOrdersHeading {
+      font: 400 2vmax "Roboto";
+      padding: 4vw;
+    }
+  
+    .myOrdersTable div {
+      font: 300 2vw "Roboto";
+    }
+  
+    .MuiDataGrid-columnHeader {
+      padding: 5px !important;
+    }
+  
+    .MuiDataGrid-columnHeader div {
+      font: 500 2vw "Roboto" !important;
+    }
+  }
+
+
   @media screen and (max-width: 600px) {
     .myOrdersPage {
       padding: 0;
       height: 93vh;
     }
   
-    #myOrdersHeading {
-      font: 400 2.2vmax "Roboto";
-      padding: 4vw;
-    }
+    
   
     .myOrdersTable div {
-      font: 300 4vw "Roboto";
+      font: 300 2.5vw "Roboto";
     }
   
     .MuiDataGrid-columnHeader {
-      padding: 20px !important;
+      padding: 10px !important;
     }
   
     .MuiDataGrid-columnHeader div {
-      font: 500 5vw "Roboto" !important;
+      font: 500 2.5vw "Roboto" !important;
     }
   }

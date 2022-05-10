@@ -65,7 +65,6 @@ import UserList from "./component/admin/UserList.js";
 
 import UpdateUser from "./component/admin/UpdateUser.js";
 import ProductReview from './component/admin/ProductReview';
-import AdminUpdate from "./component/admin/AboutForm";
 
 import About from "./component/about/About";
 //import Contact from "./component/about/contact";
@@ -239,7 +238,6 @@ function App() {
 
             <Route path='admin/reviews' element={<ProductReview/>}/>
 
-            <Route path='admin/about/update' element={<AdminUpdate/>}/>
 
           </Route>
 
