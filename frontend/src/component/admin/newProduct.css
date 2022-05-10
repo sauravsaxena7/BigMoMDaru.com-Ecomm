@@ -107,6 +107,7 @@
     }
     .createProductForm {
       padding: 5vmax;
+      width: 45vh;
     }
   
     .createProductForm > div > input,

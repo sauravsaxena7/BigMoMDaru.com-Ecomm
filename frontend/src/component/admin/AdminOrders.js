@@ -5,7 +5,7 @@ import { DataGrid } from "@material-ui/data-grid";
 
 import "./productList.css";
 
-import { Button } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import MetaData from "../layout/MetaData";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -167,6 +167,8 @@ const AdminOrders = () =>{
                        className="myOrdersTable"
                        autoHeight
                     />
+                    
+                    <Typography id="myOrdersHeading">Admin's Orders</Typography>
 
 
                     </div>

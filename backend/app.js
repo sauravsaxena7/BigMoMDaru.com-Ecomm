@@ -19,12 +19,12 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 }
 
 
-// const dotenv = require("dotenv");
+//const dotenv = require("dotenv");
 
 
 //config
 
-// dotenv.config({path:"backend/config/config.env"});
+//dotenv.config({path:"backend/config/config.env"});
 
 
 
